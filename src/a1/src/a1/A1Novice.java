@@ -13,9 +13,9 @@ public class A1Novice {
 		
 	int numCust = scan.nextInt();
 	
-	String [] fullName = new String  [numCust]; 
+	String [] fullName = new String [numCust]; 
 		
-	int [] totPrice = new int[numCust];
+	double [] totPrice = new double[numCust];
 		
 	for (int i=0; i< numCust; i++) {
 	
@@ -28,36 +28,34 @@ public class A1Novice {
 		int numItems = scan.nextInt(); 
 		
 		fullName [i] = initial + "." + lastName;
-		 
-	
-	for (int j=0; j< numItems; j++) {
-	
-		int quan = scan.nextInt();
-	
-		String items = scan.next();
-	
-		double price = scan.nextDouble();
-	
-		totPrice[j] += quan * price;	
 		
+	
+		for (int j=0; j<numItems; j++) {
+	
+					int quan = scan.nextInt();
+					
+					String name = scan.next();
 		
+					double price = scan.nextDouble();
+	
+					totPrice[i] += (quan * price);	
+		
+					
 	}
 	
 
-	
+		
 	}
 	
-	scan.close();
+	
 	for (int k=0; k< numCust; k++) {
 	
 	
-	System.out.println(fullName [k] + ": "+ totPrice[k]);
+	System.out.println(fullName[k] + ": "+ String.format("%.2f", totPrice[k]));
+	                         
 	
-	
-
-	
-
 	}		
 		
+	scan.close();
 	}
 }
