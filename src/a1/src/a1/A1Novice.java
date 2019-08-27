@@ -27,7 +27,7 @@ public class A1Novice {
 		
 		int numItems = scan.nextInt(); 
 		
-		fullName [i] = initial + "." + lastName;
+		fullName [i] = initial + "." + " " + lastName;
 		
 	
 		for (int j=0; j<numItems; j++) {
