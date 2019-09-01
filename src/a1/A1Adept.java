@@ -77,7 +77,7 @@ public class A1Adept {
 				int biggest = 0;
 				double most = 0.0;
 				
-				for (int i = 0; i < totPrice.length; i++) { //finds highest paying customer
+				for (int i = 0; i < totPrice.length; i++) { //finds "biggest"
 					if(totPrice[i]>most) {
 						most = totPrice[i];
 						biggest = i;
@@ -87,7 +87,7 @@ public class A1Adept {
 				int smallest = 0;
 				double least = most;
 				
-				for (int i = 0; i < totPrice.length; i++) { //finds lowest paying customer
+				for (int i = 0; i < totPrice.length; i++) { //finds "smallest"
 				if(totPrice[i]<least) {
 				least = totPrice[i];
 				smallest = i;	
