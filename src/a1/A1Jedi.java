@@ -83,9 +83,11 @@ public class A1Jedi {
 		
 		for (int i = 0; i < a.length; i++)
 			if (target.equals(a[i]))
-				index = i;
+				return i;
 
-		return index;
+		return -1;
+
+		
 		}	
 		
 }
